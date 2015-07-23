@@ -52,6 +52,22 @@
             /*====================================
             WRITE YOUR SCRIPTS HERE
             ======================================*/
+            
+            // AJAX form submission to getsimpleform.com
+            
+            $('#ajax-form').submit(function(){
+              $.ajax({
+                dataType: 'jsonp',
+                url: "http://getsimpleform.com/messages/ajax?form_api_token=e01a1c93f968e2c6e1f3954bbe1364a0",
+                data: $('#ajax-form').serialize() 
+              }).done(function() {
+                //callback which can be used to show a thank you message
+                //and reset the form
+                alert("Thank you for your message.");
+              });
+              return false; //to stop the form from submitting
+            });
+            
         },
 
         initialization: function () {
