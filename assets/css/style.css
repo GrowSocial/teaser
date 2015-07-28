@@ -15,25 +15,24 @@
     ===================================*/
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size:14px;
+    font-size:16px; /*tec 14*/
     line-height:25px;
 }
 .text-center {
     text-align:center;
 }
 .sub-head {
-        padding-bottom:50px;
+        padding-bottom:25px;/*tec 50*/
         display:block;
     }
 .pad-top-botm {
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:25px;/*tec 50*/
+    padding-bottom:25px;/*tec 50*/
 }
   
 h2 {
     color:#0008FF;
-    font-weight:900;
-    
+    font-weight:900;  
 }
 h3{
     color:#159238;
@@ -71,17 +70,18 @@ h3{
 /*Menu border Color*/
 .navbar-default {
 border-color: #000;
-background-color:#242222;
+background-color:#242222; /*tec 242222 */
 }
 /*Logo Image */
 .navbar-brand-logo {
     max-height:60px;
     padding-bottom:20px;
+	/*padding-top:20px; */
 }
 /*top-menu links color*/
-.navbar-default .navbar-nav > li > a {
-    color: #FFF;
-}
+.navbar-default .navbar-nav > li > a { color: #aaa; /*tec fff*/
+} 
+
 /*top-menu links color on hover*/
     .navbar-default .navbar-nav > li > a:hover {
         color: #fff;
@@ -93,13 +93,13 @@ background-color:#242222;
 }
 /*toggle styles*/ 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color:#159238;
+    background-color:#159238; /*tec 159238 */
 }
 .navbar-default .navbar-toggle {
     border:2px solid #159238;
 }
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #fff;
+background-color: #ded; /*tec fff*/
 }
 
 /*=====================================
@@ -175,7 +175,7 @@ margin-bottom: 30px;
 
 #about {
      background-color: #efefef; 
-     padding-top: 80px;
+     padding-top: 80px; /*tec 80*/
 }
 .big-icon {
     font-size:250px;
