@@ -56,14 +56,24 @@
             // AJAX form submission to getsimpleform.com
             
             $('#ajax-form').submit(function(){
+              $('#button-submit').text("Message submitted, waiting for response");
+              $('#button-submit').prop( "disabled", true );
+              $('#button-submit').removeClass( 'btn-success' );
+              $('#button-submit').addClass( 'btn-info' );
               $.ajax({
                 dataType: 'jsonp',
                 url: "http://getsimpleform.com/messages/ajax?form_api_token=e01a1c93f968e2c6e1f3954bbe1364a0",
-                data: $('#ajax-form').serialize() 
+                data: $('#ajax-form').serialize(),
+                timeout: 10000,
+                error: function() {
+                  $('#button-submit').text("There was a problem. Resubmit?")
+                  $('#button-submit').prop( "disabled", false );
+                  $('#button-submit').addClass( 'btn-success' );
+                  $('#button-submit').removeClass( 'btn-info' );
+                }
               }).done(function() {
                 //callback which can be used to show a thank you message
-                //and reset the form
-                alert("Thank you for your message.");
+                $('#button-submit').text("Thank you for your message")
               });
               return false; //to stop the form from submitting
             });
