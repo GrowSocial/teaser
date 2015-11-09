@@ -88,6 +88,17 @@
     }
     // Initializing ///
 
+    // $(document).ready(function(){
+      // $(".owl-carousel").owlCarousel({
+        // center: true,
+        // items:1,
+        // loop:true,
+        // autoplay:false,
+        // dots:true, 
+        // dotsEach:1,  // no effect seen
+      // });
+    // });
+
     $(document).ready(function () {
         mainApp.main_fun();
         // WOW FUNCTION 
