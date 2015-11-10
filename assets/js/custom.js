@@ -55,7 +55,12 @@
             
             // AJAX form submission to getsimpleform.com
             
+            $( "#ajax-form" ).validate();
+            
             $('#ajax-form').submit(function(){
+              if ( !$( "#ajax-form" ).valid() ) {
+                return false;
+              }
               $('#button-submit').text("Message submitted, waiting for response");
               $('#button-submit').prop( "disabled", true );
               $('#button-submit').removeClass( 'btn-success' );
