@@ -54,6 +54,9 @@
             ======================================*/
             
             // AJAX form submission to getsimpleform.com
+
+            // on refresh, remove the disabled property
+            $('#button-submit').prop( "disabled", false );
             
             $( "#ajax-form" ).validate();
             
