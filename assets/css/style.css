@@ -147,7 +147,7 @@ background-color: #ded; /*tec fff*/
        text-align:center;
     }
     #home .overlay {
-              background:url(../img/overlays/06.png);        
+          /*    background:url(../img/overlays/06.png);    */    
               padding-bottom: 20px;
        /*  min-height:700px; */
     }
@@ -315,10 +315,12 @@ color:#fff;
 #help {
     color:#fff;
    
-      background: url(../img/help.jpg) no-repeat center center;
+  /*    background: url(../img/help.jpg) no-repeat center center; */
 padding: 0;
+/*
 -webkit-background-size: cover;
 background-size: cover;
+*/
 }
 
 #help .overlay {
