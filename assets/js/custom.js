@@ -70,7 +70,7 @@
               $('#button-submit').addClass( 'btn-info' );
               $.ajax({
                 dataType: 'jsonp',
-                url: "http://getsimpleform.com/messages/ajax?form_api_token=e01a1c93f968e2c6e1f3954bbe1364a0",
+                url: "http://getsimpleform.com/messages/ajax?form_api_token=934e8b84e5d324667fe5ed70f47ca84a",
                 data: $('#ajax-form').serialize(),
                 timeout: 10000,
                 error: function() {
